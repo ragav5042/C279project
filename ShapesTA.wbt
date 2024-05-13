@@ -1,0 +1,108 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.23882519003489552 0.13977290310327015 -0.9609506044344214 0.26177649899853167
+  position -8.938743258312046 1.5247971701537997 0.5129996347267222
+}
+TexturedBackground {
+}
+DEF SPHERE Transform {
+  translation 0 -0.83 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0.62133
+        roughness 0.2
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+        subdivision 2
+      }
+    }
+  ]
+}
+DEF PLANE Transform {
+  translation -5 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.2 0.8
+        roughness 0.2
+        metalness 0
+      }
+      geometry Plane {
+        size 0.6 0.6
+      }
+    }
+  ]
+}
+DEF CYLINDER Pose {
+  translation -1.5 0.91 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.3 0.1
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.6
+        radius 0.2
+        subdivision 45
+      }
+    }
+  ]
+}
+DEF CAPSULE Pose {
+  translation -1 -1.55 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.7 0.6 0.4
+        roughness 1
+      }
+      geometry Capsule {
+        height 0.5
+        radius 0.25
+      }
+    }
+  ]
+}
+TexturedBackgroundLight {
+}
+DEF BOX Pose {
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0.264
+        roughness 0.2
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.3 0.4
+      }
+    }
+  ]
+}
+DEF CONE Pose {
+  translation 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.62 0.264
+        roughness 0.2
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.3
+        height 0.5
+        subdivision 36
+      }
+    }
+  ]
+}
